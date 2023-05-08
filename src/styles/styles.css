@@ -280,12 +280,12 @@ img {
   color: #707070;
 }
 
-.hero__button-wrapper {
+.arrow-button-wrapper {
   display: flex;
   align-items: flex-start;
 }
 
-.hero__button-wrapper::after {
+.arrow-button-wrapper::after {
   content: "";
   width: 108px;
   height: 87px;

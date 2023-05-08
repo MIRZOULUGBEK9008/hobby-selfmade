@@ -9,7 +9,7 @@ function SiteHero() {
     <h1 className="hero__title title">Make a <b>Beautiful Garden</b> with Your own Hand</h1>
     <p className="hero__description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form
     </p>
-    <div className="hero__button-wrapper">
+    <div className="arrow-button-wrapper">
     <button className="hero__button button button--arrow">Shop now</button>
     </div>
     </div>
