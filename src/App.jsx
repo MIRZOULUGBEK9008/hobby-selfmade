@@ -1,6 +1,6 @@
 import React from 'react'
 import Loader from './components/Loader'
-import Header from './components/Header'
+import SiteHeroHeader from './components/SiteHeroHeader'
 import MainContent from './components/main-content/MainContent'
 import Footer from './components/Footer'
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
     <Loader />
-    <Header />
+    <SiteHeroHeader />
     <MainContent />
     <Footer />
     </>

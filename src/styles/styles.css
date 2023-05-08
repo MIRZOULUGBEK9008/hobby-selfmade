@@ -1,9 +1,14 @@
 /* CUSTOM-PROPS */
-:root {
-  --loader-color: #000;
-}
+/* FONTS  */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Roboto+Mono:wght@400;500;600;700&display=swap');
 
-/* FONT-FACE  */
+:root {
+  --green: #0ca941;
+  --loader-color: var(--green);
+  --grey: #678570;
+  --black: #374a3d;
+  --white: #fff;
+}
 
 /* LOADER */
 .loader-wrapper {
@@ -12,7 +17,7 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: var(--white);
   position: fixed;
   z-index: 999;
   transition: opacity 0.2s ease;
@@ -60,11 +65,11 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #fff;
-  color: #222;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  background-color: var(--white);
+  color: var(--grey);
+  font-family: "Roboto Mono", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
   padding: 0;
   margin: 0;
 }
@@ -84,7 +89,7 @@ img {
 
 /* FOCUS-STYLES  */
 *:focus {
-  outline: 3px dashed black;
+  outline: 3px dashed var(--green);
   outline-offset: 3px;
 }
 
@@ -115,4 +120,194 @@ img {
 /* MAIN-CONTENT  */
 .main-content {
   flex-grow: 1;
+}
+
+/* TITLE  */
+.title {
+  margin-top: 0;
+  color: var(--black);
+  font-size: 36px;
+  line-height: 1.2;
+  font-family: "Fredoka", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+
+/* LOGO  */
+.logo {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+.logo__img {
+  display: block;
+  width: 145px;
+  height: 34px;
+  object-fit: contain;
+  object-position: center;
+}
+
+
+/* BUTTON  */
+.button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  text-align: center;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
+.button--green-small {
+  padding: 10px;
+  min-width: 110px;
+  background-color: var(--green);
+  border-radius: 6px;
+  color: var(--white);
+}
+
+.button--arrow {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  border: 2px solid var(--green);
+  min-width: 179px;
+  padding: 25px;
+  border-radius: 50%;
+}
+
+.button--arrow::after {
+  content: "";
+  width: 18px;
+  height: 11px;
+  background-image: url(../img/arrow-button-min.svg);
+  margin-left: 6px;
+}
+
+
+
+/* SITE-HERO-HEADER-WRAPPER  */
+.site-hero-header-wrapper {
+  position: relative;
+  min-height: 900px;
+  background-image: url(../img/index-hero-bg-min.svg), url(../img/index-header-flower-bg-min.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: calc(50% + 85px) calc(47% + 10px), calc(50% - 700px) top;
+}
+
+/* SITE-HEADER  */
+.site-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+.site-header__logo {
+  margin-right: 30px;
+}
+
+.site-header__sitenav {
+  display: flex;
+  align-items: center;
+}
+
+.sitenav__list {
+  display: flex;
+  margin: 0;
+  margin-right: 56px;
+  padding: 0;
+  list-style: none;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.sitenav__link {
+  color: var(--black);
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+.hero__content {
+  width: 100%;
+  max-width: 616px;
+  padding-top: 132px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 38px;
+  color: var(--black);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.05;
+}
+
+.hero__title > b {
+  color: var(--green);
+}
+
+.hero__description {
+  margin-top: 0;
+  padding-bottom: 40px;
+  color: #707070;
+}
+
+.hero__button-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.hero__button-wrapper::after {
+  content: "";
+  width: 108px;
+  height: 87px;
+  background-image: url(../img/arrow-min.svg);
+  background-repeat: no-repeat;
+  margin-top: 17px;
+  margin-left: 57px;
+}
+
+.hero__cactus-img-wrapper {
+  position: absolute;
+  bottom: -49px;
+  left: 43%;
+  display: flex;
+  justify-content: center;
+  width: 169px;
+  height: 189px;
+  background-color: var(--white);
+  box-shadow: 22px 34px 50px 11px #7CA41714;
+  border-radius: 35px;
+}
+
+.hero__cactus-img {
+  transform: translateY(-60px);
 }
