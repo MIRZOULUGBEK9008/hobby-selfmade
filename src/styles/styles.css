@@ -75,6 +75,7 @@ body {
   line-height: 1.7;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .root {
@@ -125,7 +126,7 @@ img {
   flex-grow: 1;
 }
 
-.main-content--blur {
+.main-content--bg {
   background-image: url(../img/section-gardener-info-blur-bg-min.svg);
   background-repeat: no-repeat;
   background-position: calc(50% - 350px) top;
@@ -400,9 +401,9 @@ img {
   position: absolute;
   z-index: -1;
   content: "";
-  background-image: url(../img/dt-bg-min.svg);
-  height: 73px;
   width: 83px;
+  height: 73px;
+  background-image: url(../img/dt-bg-min.svg);
   background-repeat: no-repeat;
   background-position: center left;
   background-size: cover;
@@ -459,4 +460,109 @@ img {
   height: 527px;
   object-fit: contain;
   object-position: center;
+}
+
+
+/* INDEX-DATA-PRO */
+.index-data-pro {
+  position: relative;
+}
+
+.index-data-pro__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-bottom: 85px;
+}
+
+.index-data-pro__content {
+  width: 100%;
+  max-width: 458px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.index-data-pro__title {
+  margin-bottom: 30px;
+}
+
+.index-data-pro__description {
+  margin-top: 0;
+}
+
+.index-data-pro__description:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.index-data-pro__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  ". . b b "
+  "a a b b"
+  "a a c c"
+  ". . c c";
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.index-data-pro__card {
+  width: 290px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 8px 9px 42px 0px #0CA9411F;
+  background-color: var(--white);
+}
+
+.data-pro-card:first-child {
+  grid-area: a;
+}
+
+.data-pro-card:nth-child(2) {
+  grid-area: b;
+}
+
+.data-pro-card:last-child {
+  grid-area: c;
+}
+
+.data-pro-card__inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.data-pro-card__img {
+  display: block;
+  width: 136px;
+  height: 132px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.data-pro-card__title {
+  color: var(--black);
+  font-family: var(--fredoka);
+  margin-top: 0;
+  margin-bottom: 13px;
+  text-transform: capitalize;
+}
+
+.data-pro-card__description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.index-data-pro__bg {
+  display: block;
+  position: absolute;
+  top: -23%;
+  left: calc(50% - 180px);
+  z-index: -1;
 }
