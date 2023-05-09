@@ -404,8 +404,8 @@ img {
 
 .index-statistic__flower {
   position: absolute;
-  top: 0;
-  left: -144px;
+  top: -15px;
+  left: -120px;
   width: 289px;
   height: 350px;
   object-fit: cover;
