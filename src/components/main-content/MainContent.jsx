@@ -2,6 +2,7 @@ import React from 'react'
 import IndexStatistic from './IndexStatistic'
 import IndexData from './IndexData'
 import IndexDataPro from './IndexDataPro'
+import IndexDream from './IndexDream'
 
 function MainContent() {
   return (
@@ -9,6 +10,7 @@ function MainContent() {
     <IndexStatistic/>
     <IndexData/>
     <IndexDataPro/>
+    <IndexDream/>
     </main>
     )
   }

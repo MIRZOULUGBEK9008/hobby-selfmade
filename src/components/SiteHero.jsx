@@ -10,7 +10,7 @@ function SiteHero() {
     <p className="hero__description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form
     </p>
     <div className="arrow-button-wrapper">
-    <button className="hero__button button button--arrow">Shop now</button>
+    <a className="hero__button button button--arrow" href='#'>Shop now</a>
     </div>
     </div>
     <div className="hero__cactus-img-wrapper">

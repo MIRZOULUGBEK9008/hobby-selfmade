@@ -36,7 +36,7 @@ function IndexDataPro() {
     ipsum primis in faucibus orci luctus et ultrices posue</p>
     <p className="index-data-pro__description">Mauris vel auctor enim many variations. There are many variations of passages of Lorem Ipsum .</p>
     <div className="arrow-button-wrapper">
-    <button className="data-content__button button button--arrow">Read more</button>
+    <a className="data-content__button button button--arrow" href='#'>Read more</a>
     </div>
     </div>
 
