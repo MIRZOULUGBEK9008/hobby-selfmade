@@ -3,6 +3,7 @@ import IndexStatistic from './IndexStatistic'
 import IndexData from './IndexData'
 import IndexDataPro from './IndexDataPro'
 import IndexDream from './IndexDream'
+import IndexForm from './IndexForm'
 
 function MainContent() {
   return (
@@ -11,6 +12,7 @@ function MainContent() {
     <IndexData/>
     <IndexDataPro/>
     <IndexDream/>
+    <IndexForm/>
     </main>
     )
   }

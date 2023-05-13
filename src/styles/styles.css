@@ -192,6 +192,13 @@ img {
   background-color: var(--green);
   border-radius: 6px;
   color: var(--white);
+  cursor: pointer;
+}
+
+.button--green-big {
+  border-radius: 10px;
+  padding: 25px;
+  min-width: 223px;
 }
 
 .arrow-button-wrapper {
@@ -712,4 +719,55 @@ img {
 
 .index-rating__price-detail::before {
   content: "$";
+}
+
+
+/* FORM-INDEX  */
+.index-form__container {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.index-form__content {
+  width: 100%;
+  max-width: 626px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.index-form__title {
+  margin-bottom: 30px;
+}
+
+.index-form__description {
+  margin: 0;
+}
+
+.form-index__inner {
+  width: 100%;
+  max-width: 660px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.form-index__inner *:focus {
+  outline: none;
+}
+
+.form-index__input {
+  width: 100%;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid var(--green);
+}
+
+.form-index__input::placeholder {
+  color: #c4c4c4;
+}
+
+.form-index__button {
+  margin-left: -57px;
 }
