@@ -654,6 +654,24 @@ img {
   margin-bottom: 9px;
 }
 
+.index-rating__rating {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.index-rating__yellow-star {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.index-rating__yellow-star:not(:last-child) {
+  margin-right: 2px;
+}
+
 .index-rating__bottom {
   display: flex;
   align-items: center;
@@ -690,4 +708,8 @@ img {
   color: var(--green);
   font-size: 20px;
   line-height: 1.5;
+}
+
+.index-rating__price-detail::before {
+  content: "$";
 }

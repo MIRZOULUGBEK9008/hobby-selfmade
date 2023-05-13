@@ -22,9 +22,9 @@ function IndexDream() {
         height: 233
       },
       title: "Indoors tropical plant",
-      rating: 5.0,
+      rating: 4,
       warehouse: 134,
-      price: "$150",
+      price: 150,
       type: "Indoors tropical"
     },
     {
@@ -36,9 +36,9 @@ function IndexDream() {
         height: 233
       },
       title: "Monstera deliciosa care",
-      rating: 5.0,
+      rating: 3,
       warehouse: 120,
-      price: "$200",
+      price: 200,
       type: "Monstera deliciosa care"
     },
     {
@@ -50,18 +50,12 @@ function IndexDream() {
         height: 240
       },
       title: "Indoors leaf potted",
-      rating: 5.0,
+      rating: 5,
       warehouse: 183,
-      price: "$150",
+      price: 150,
       type: "Indoors leaf potted"
     }
   ]
-
-  const indexRating = (e) => {
-    for (let i = 1; i <= e; i++) {
-      <IndexRating />
-    }
-  }
 
   return (
     <section className="index-dream">
@@ -80,9 +74,7 @@ function IndexDream() {
           <img className="dream-card__img" src={dreamCard.img.imgName} srcSet={`${dreamCard.img.imgResponsive} 1x, ${dreamCard.img.imgResponsive}2x`} alt={dreamCard.type} width={dreamCard.img.with} height={dreamCard.img.height}/>
           <div className="dream-card__rating index-rating">
           <div className="index-rating__inner">
-          {
-            indexRating(dreamCard.rating)
-          }
+          <IndexRating rating={dreamCard.rating}/>
           <div className="index-rating__rating">{dreamCard.rating}</div>
           <div className="index-rating__warehouse">{dreamCard.warehouse}</div>
           </div>
