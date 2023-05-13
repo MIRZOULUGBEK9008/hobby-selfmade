@@ -17,10 +17,10 @@ function SiteHeader() {
     <nav className="site-header__sitenav sitenav">
     <ul className="sitenav__list">
     {
-    SiteHeaderLinks.map((item) => {
+    SiteHeaderLinks.map((item, index) => {
       return (
         <li className="sitenav__item">
-        <a className="sitenav__link" href="#" key={item.id}>{item.link}</a>
+        <a className="sitenav__link" href="#" key={index}>{item.link}</a>
         </li>
       )
     })
