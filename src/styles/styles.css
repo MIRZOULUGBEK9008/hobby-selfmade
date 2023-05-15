@@ -91,6 +91,22 @@ img {
 }
 
 
+/* AUTOFILL  */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: black;
+  -box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
 /* FOCUS-STYLES  */
 *:focus {
   outline: 3px dashed var(--green);
@@ -726,6 +742,15 @@ img {
 .index-form__container {
   padding-top: 65px;
   padding-bottom: 65px;
+}
+
+.index-form-content-form-wrapper {
+  padding: 95px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border-radius: 19px;
 }
 
 .index-form__content {
